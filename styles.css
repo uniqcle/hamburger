@@ -20,7 +20,14 @@ button{
     border: none;
     padding: 1rem;
     background-color: rebeccapurple;
+    transition: transform 0.3s ease-in-out; 
 }
+
+button.active{
+    transform: translate(-100px); 
+
+}
+
 
 nav{
     background-color: rebeccapurple;
@@ -29,8 +36,12 @@ nav{
     right: 0;
     height: 100vh;
     padding: 2rem;
-    transform: translateX(-500%) rotate(40deg);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out; 
+}
 
+nav.active{
+    transform: translateX(0%); 
 }
 
 nav ul{
